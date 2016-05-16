@@ -1,4 +1,6 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using SGen;
@@ -12,11 +14,22 @@ namespace Evil_in_Dangeon
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        //Элементы SGen
+        Screen screen;
+        MyWorld world;
+        //Счетчик ФПС
+        int second;
+        int fps = 0;
 
         public Main()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            //Настройка экрана
+            //Screen.Set(graphics, 1200, 800, 80, 0);
+            Screen.Set(graphics, 1600, 900, 96, 3);
+            //Screen.Set(graphics, 1920, 1080, 80, 0);
+            //graphics.IsFullScreen = true;
         }
 
         /// <summary>
@@ -28,6 +41,7 @@ namespace Evil_in_Dangeon
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            Box.Grounds = new int[] { 1 }; //Назначаем блоки, через которые нельзя проходить
 
             base.Initialize();
         }
@@ -40,8 +54,15 @@ namespace Evil_in_Dangeon
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            Screen.spriteBatch = spriteBatch; //Передаём ссылку на устройство рисования классу экрана
+            Box.spriteBatch = spriteBatch; //и классу блока (для рисования)
 
-            // TODO: use this.Content to load your game content here
+            //Загрузка спрайтов
+            Hero.Texture = Content.Load<Texture2D>("Hero");
+
+            //Загрузка уровня
+            world = new MyWorld("\\Map.map", this);
+            screen = new Screen(World.Players[0]);
         }
 
         /// <summary>
@@ -60,10 +81,14 @@ namespace Evil_in_Dangeon
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+            //if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            //    Exit();
+            if (Keyboard.GetState().IsKeyDown(Keys.Enter)) graphics.ToggleFullScreen();
 
-            // TODO: Add your update logic here
+            //Обновление игрового процесса
+            World.Update();
+            //Обновление камеры
+            screen.Update();
 
             base.Update(gameTime);
         }
@@ -74,11 +99,17 @@ namespace Evil_in_Dangeon
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            //Рисование сцены
+            screen.Draw(GraphicsDevice);
 
-            // TODO: Add your drawing code here
-
+            fps++;
             base.Draw(gameTime);
+            if (second != DateTime.Now.Second)
+            {
+                second = DateTime.Now.Second;
+                Window.Title = "FPS: " + fps.ToString();
+                fps = 0;
+            }
         }
     }
 }
