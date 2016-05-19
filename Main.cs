@@ -25,9 +25,10 @@ namespace Evil_in_Dangeon
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            Box.Gravitation = 1;
             //Настройка экрана
             //Screen.Set(graphics, 1200, 800, 80, 0);
-            Screen.Set(graphics, 1600, 900, 96, 3);
+            Screen.Set(graphics, 1600, 900, 80, 0);
             //Screen.Set(graphics, 1920, 1080, 80, 0);
             //graphics.IsFullScreen = true;
         }
@@ -42,7 +43,7 @@ namespace Evil_in_Dangeon
         {
             // TODO: Add your initialization logic here
             Box.Grounds = new int[] { 1 }; //Назначаем блоки, через которые нельзя проходить
-
+            Box.Platforms = new int[] { 2 }; //Платформы
             base.Initialize();
         }
 
@@ -59,7 +60,9 @@ namespace Evil_in_Dangeon
 
             //Загрузка спрайтов
             Hero.Texture = Content.Load<Texture2D>("Hero");
-
+            Coin.Texture = Content.Load<Texture2D>("Coin");
+            Bonus.Texture = Content.Load<Texture2D>("Bonus");
+            Flash.Texture = Content.Load<Texture2D>("Flash");
             //Загрузка уровня
             world = new MyWorld("\\Map.map", this);
             screen = new Screen(World.Players[0]);
