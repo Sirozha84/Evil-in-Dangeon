@@ -19,6 +19,8 @@ namespace Evil_in_Dangeon
         bool ground = true;
         int timer = 0;
         bool walk = false;
+        bool shot = false;
+        int shotAnim = 0;
 
         public Hero(int x, int y) : base(x, y - 80, 80, 160, 12, 0, true, true, true, 10f, 0, 0)
         {
@@ -33,7 +35,14 @@ namespace Evil_in_Dangeon
             Draw(Texture);
             int x = 0;
             if (AnimationSide < 0) x = -80;
-            Draw(TextureGuns, x, 0, new Rectangle(Gun * 80, 0, 160, 160));
+            int f = 0;
+            if (shotAnim > 0)
+            {
+                f = 1;
+                shotAnim--;
+            }
+            else shotAnim = 0;
+            Draw(TextureGuns, x, 0, new Rectangle(f * 160, Gun * 160, 160, 160));
         }
 
         public override void Trigger()
@@ -59,6 +68,7 @@ namespace Evil_in_Dangeon
             }
             //Не ходим
             if (!walk) AnimationFrame = 0;
+            //Прыгаем
             if (Keyboard.GetState().IsKeyDown(Keys.Up) & ground & !pressJump)
             {
                 Jump();
@@ -66,6 +76,17 @@ namespace Evil_in_Dangeon
             }
             pressJump = !(!Keyboard.GetState().IsKeyDown(Keys.Up) & ground);
             ground = Physics(true);
+            //Стреляние
+            if (Keyboard.GetState().IsKeyDown(Keys.Space) & !shot)
+            {
+                int x = -28;
+                if (AnimationSide > 0) x = 100;
+                World.NewObject(new Bullet((int)Position.X + x, (int)Position.Y + 64, AnimationSide));
+                shot = true;
+                shotAnim = 2;
+            }
+            if (Keyboard.GetState().IsKeyUp(Keys.Space)) shot = false;
+
         }
 
         void GoAnimation()

@@ -63,9 +63,11 @@ namespace Evil_in_Dangeon
             Hero.Texture = Content.Load<Texture2D>("Hero");
             Hero.TextureGuns = Content.Load<Texture2D>("Guns");
             Coin.Texture = Content.Load<Texture2D>("Coin");
-            Coin.Sound = Content.Load<SoundEffect>("TakeCoin");
+            Coin.Sound = Content.Load<SoundEffect>("CoinTake");
             Bonus.Texture = Content.Load<Texture2D>("Bonus");
             Flash.Texture = Content.Load<Texture2D>("Flash");
+            Bullet.Texture = Content.Load<Texture2D>("Bullet");
+            Bullet.Sound = Content.Load<SoundEffect>("BulletShot");
             //Загрузка уровня
             world = new MyWorld("\\Map.map", this);
             screen = new Screen(World.Players[0]);
