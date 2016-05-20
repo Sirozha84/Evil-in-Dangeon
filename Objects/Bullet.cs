@@ -11,6 +11,7 @@ namespace Evil_in_Dangeon
     {
         public static Texture2D Texture;
         public static SoundEffect Sound;
+        public static SoundEffect SountRikoshet;
 
         public Bullet(int x, int y, int side) : base(x, y, 8, 4)
         {
@@ -34,6 +35,12 @@ namespace Evil_in_Dangeon
         public override void Update()
         {
             Position.X += AnimationSide * 20;
+            if (WhatIsTiler(4, 2) == 1)
+            {
+                World.NewObject(new Flash((int)Position.X - 6, (int)Position.Y - 8));
+                PlayIfVisible(SountRikoshet, false);
+                Destroy();
+            }
         }
     }
 }

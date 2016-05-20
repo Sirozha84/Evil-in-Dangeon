@@ -13,7 +13,10 @@ namespace Evil_in_Dangeon
         public static Texture2D Texture;
         public static Texture2D TextureGuns;
 
-        public static int Gun = 0;
+        public int Gun = 0;
+        int Health = 10;
+
+
         bool Jump = false;
         bool pressJump = false;
         bool ground = true;
@@ -21,6 +24,7 @@ namespace Evil_in_Dangeon
         bool walk = false;
         bool shot = false;
         int shotAnim = 0;
+        int timerdamage = 0;
 
         public Hero(int x, int y) : base(x, y - 80, 80, 160, 12, 0, true, true, true, 10f, 0, 0)
         {
@@ -32,7 +36,12 @@ namespace Evil_in_Dangeon
 
         public override void Draw()
         {
-            Draw(Texture);
+            if (timerdamage == 0) Draw(Texture);
+            else
+            {
+                Draw(Texture, Color.Red);
+                timerdamage--;
+            }
             int x = 0;
             if (AnimationSide < 0) x = -80;
             int f = 0;
@@ -45,12 +54,18 @@ namespace Evil_in_Dangeon
             Draw(TextureGuns, x, 0, new Rectangle(f * 160, Gun * 160, 160, 160));
         }
 
-        public override void Trigger()
-        {
-        }
+        public override void Trigger() { }
 
         public override void Update()
         {
+            if (timerdamage > 50)
+            {
+                if (AnimationSide < 0) GoRight(); else GoLeft();
+                Physics(true);
+                //Тут можно и анимацию фиговости сделать
+
+                return;
+            }
             //Управление
             //Ходим
             walk = false;
@@ -111,8 +126,26 @@ namespace Evil_in_Dangeon
             //Берём монетку
             if (box is Coin)
             {
-                Coin coin = box as Coin; coin.Take();
+                Coin coin = box as Coin;
+                coin.Take();
                 World.NewObject(new Bonus((int)Position.X, (int)Position.Y, coin.Nominal));
+            }
+            //Попадаем в смертельную зону (шипы, газ...)
+            if (box is DeathZone)
+            {
+                DeathZone zone = box as DeathZone;
+                GetDamage(zone.Damage);
+            }
+        }
+
+        //Получение повреждения
+        void GetDamage(int damage)
+        {
+            if (timerdamage == 0)
+            {
+                timerdamage = 60;
+                Health -= damage;
+                Impuls(new Vector2(0, -15));
             }
         }
     }

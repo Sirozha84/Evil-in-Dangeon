@@ -68,6 +68,7 @@ namespace Evil_in_Dangeon
             Flash.Texture = Content.Load<Texture2D>("Flash");
             Bullet.Texture = Content.Load<Texture2D>("Bullet");
             Bullet.Sound = Content.Load<SoundEffect>("BulletShot");
+            Bullet.SountRikoshet = Content.Load<SoundEffect>("BulletRikoshet");
             //Загрузка уровня
             world = new MyWorld("\\Map.map", this);
             screen = new Screen(World.Players[0]);

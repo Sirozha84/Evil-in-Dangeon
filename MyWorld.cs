@@ -9,6 +9,7 @@ namespace Evil_in_Dangeon
         public override void AddObject(ushort code, int x, int y)
         {
             if (code == 3) { Box o = new Hero(x, y); Objects.Add(o); Players.Add(o); }
+            if (code == 5) Objects.Add(new DeathZone(x, y, 5));
             if (code == 20) Objects.Add(new Coin(x + 30, y + 30, 0, true));
             if (code == 21)
             {
