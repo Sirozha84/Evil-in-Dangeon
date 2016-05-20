@@ -10,7 +10,11 @@ namespace Evil_in_Dangeon
     class DeathZone : Box
     {
         public int Damage;
-        public DeathZone(int x, int y, int Damage) : base(x, y) { }
+        public DeathZone(int x, int y, int Damage) : base(x, y)
+        {
+            this.Damage = Damage;
+        }
+
         public override void Collision(Box box) { }
         public override void Draw() { }
         public override void Trigger() { }

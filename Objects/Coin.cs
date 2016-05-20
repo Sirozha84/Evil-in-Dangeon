@@ -44,11 +44,14 @@ namespace Evil_in_Dangeon
             if (!Static) Physics(true);
         }
 
-        public void Take()
+        public int Take()
         {
             Sound.Play();
             World.NewObject(new Flash((int)Position.X, (int)Position.Y));
             Destroy();
+            if (Nominal == 0) return 1;
+            if (Nominal == 1) return 3;
+            return 10;
         }
     }
 }

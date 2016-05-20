@@ -18,9 +18,12 @@ namespace Evil_in_Dangeon
         //Элементы SGen
         Screen screen;
         MyWorld world;
+        //Шрифт
+        SpriteFont Font;
         //Счетчик ФПС
         int second;
         int fps = 0;
+        int fpsavg = 0;
 
         public Main()
         {
@@ -60,6 +63,7 @@ namespace Evil_in_Dangeon
             Box.spriteBatch = spriteBatch; //и классу блока (для рисования)
 
             //Загрузка спрайтов
+            Font = Content.Load<SpriteFont>("Font");
             Hero.Texture = Content.Load<Texture2D>("Hero");
             Hero.TextureGuns = Content.Load<Texture2D>("Guns");
             Coin.Texture = Content.Load<Texture2D>("Coin");
@@ -111,14 +115,24 @@ namespace Evil_in_Dangeon
             //Рисование сцены
             screen.Draw(GraphicsDevice);
 
+            //Рисование отладочнай информации
             fps++;
             base.Draw(gameTime);
             if (second != DateTime.Now.Second)
             {
                 second = DateTime.Now.Second;
-                Window.Title = "FPS: " + fps.ToString();
+                fpsavg = fps;
                 fps = 0;
             }
+            spriteBatch.Begin();
+            spriteBatch.DrawString(Font, "FPS: " + fpsavg, new Vector2(10,10), Color.White);
+            spriteBatch.DrawString(Font, "Объектов: " + World.Objects.Count, new Vector2(10, 30), Color.White);
+            Hero hero = World.Players[0] as Hero;
+            spriteBatch.DrawString(Font, "Позиция: " + hero.Position.X + " x " + hero.Position.Y, new Vector2(10, 50), Color.White);
+
+            spriteBatch.DrawString(Font, "Здоровье: " + hero.Health + " / " + hero.HealthMax, new Vector2(300, 10), Color.White);
+            spriteBatch.DrawString(Font, "Деньги: " + hero.Money, new Vector2(300, 30), Color.White);
+            spriteBatch.End();
         }
     }
 }

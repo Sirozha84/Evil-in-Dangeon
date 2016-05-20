@@ -14,10 +14,9 @@ namespace Evil_in_Dangeon
         public static Texture2D TextureGuns;
 
         public int Gun = 0;
-        int Health = 10;
+        public int Health = 10;
+        public int HealthMax = 10;
 
-
-        bool Jump = false;
         bool pressJump = false;
         bool ground = true;
         int timer = 0;
@@ -58,12 +57,11 @@ namespace Evil_in_Dangeon
 
         public override void Update()
         {
+            //Отскок при получении повреждения
             if (timerdamage > 50)
             {
-                if (AnimationSide < 0) GoRight(); else GoLeft();
-                Physics(true);
-                //Тут можно и анимацию фиговости сделать
-
+                if (!Physics(true))
+                    if (AnimationSide < 0) GoRight(); else GoLeft();
                 return;
             }
             //Управление
@@ -101,7 +99,6 @@ namespace Evil_in_Dangeon
                 shotAnim = 2;
             }
             if (Keyboard.GetState().IsKeyUp(Keys.Space)) shot = false;
-
         }
 
         void GoAnimation()
@@ -127,7 +124,7 @@ namespace Evil_in_Dangeon
             if (box is Coin)
             {
                 Coin coin = box as Coin;
-                coin.Take();
+                Money += coin.Take();
                 World.NewObject(new Bonus((int)Position.X, (int)Position.Y, coin.Nominal));
             }
             //Попадаем в смертельную зону (шипы, газ...)
@@ -144,8 +141,16 @@ namespace Evil_in_Dangeon
             if (timerdamage == 0)
             {
                 timerdamage = 60;
-                Health -= damage;
                 Impuls(new Vector2(0, -15));
+                Physics(true);
+                Health -= damage;
+                if (Health < 0)
+                {
+                    Health = 0;
+                    //Смерть
+
+
+                }
             }
         }
     }
