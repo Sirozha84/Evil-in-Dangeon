@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 using SGen;
 
 namespace Evil_in_Dangeon
@@ -60,7 +61,9 @@ namespace Evil_in_Dangeon
 
             //Загрузка спрайтов
             Hero.Texture = Content.Load<Texture2D>("Hero");
+            Hero.TextureGuns = Content.Load<Texture2D>("Guns");
             Coin.Texture = Content.Load<Texture2D>("Coin");
+            Coin.Sound = Content.Load<SoundEffect>("TakeCoin");
             Bonus.Texture = Content.Load<Texture2D>("Bonus");
             Flash.Texture = Content.Load<Texture2D>("Flash");
             //Загрузка уровня

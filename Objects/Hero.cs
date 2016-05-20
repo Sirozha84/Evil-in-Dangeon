@@ -9,11 +9,17 @@ namespace Evil_in_Dangeon
     class Hero : Box
     {
         public int Money;
-
-
+        
         public static Texture2D Texture;
+        public static Texture2D TextureGuns;
+
+        public static int Gun = 0;
         bool Jump = false;
         bool pressJump = false;
+        bool ground = true;
+        int timer = 0;
+        bool walk = false;
+
         public Hero(int x, int y) : base(x, y - 80, 80, 160, 12, 0, true, true, true, 10f, 0, 0)
         {
             AnimationSide = 1;
@@ -25,6 +31,9 @@ namespace Evil_in_Dangeon
         public override void Draw()
         {
             Draw(Texture);
+            int x = 0;
+            if (AnimationSide < 0) x = -80;
+            Draw(TextureGuns, x, 0, new Rectangle(Gun * 80, 0, 160, 160));
         }
 
         public override void Trigger()
@@ -34,22 +43,46 @@ namespace Evil_in_Dangeon
         public override void Update()
         {
             //Управление
+            //Ходим
+            walk = false;
             if (Keyboard.GetState().IsKeyDown(Keys.Left))
             {
+                AnimationSide = -1;
                 GoLeft();
+                GoAnimation();
             }
             if (Keyboard.GetState().IsKeyDown(Keys.Right))
             {
+                AnimationSide = 1;
                 GoRight();
+                GoAnimation();
             }
-            if (Keyboard.GetState().IsKeyDown(Keys.Up) & !Jump & !pressJump)
+            //Не ходим
+            if (!walk) AnimationFrame = 0;
+            if (Keyboard.GetState().IsKeyDown(Keys.Up) & ground & !pressJump)
             {
                 Jump();
-                Jump = true;
                 pressJump = true;
             }
-            if (!Keyboard.GetState().IsKeyDown(Keys.Up)) pressJump = false;
-            if (Physics(true) && Jump) Jump = false;
+            pressJump = !(!Keyboard.GetState().IsKeyDown(Keys.Up) & ground);
+            ground = Physics(true);
+        }
+
+        void GoAnimation()
+        {
+            if (!ground)
+                AnimationFrame = 0;
+            else
+            {
+                timer++;
+                if (timer > 2)
+                {
+                    timer = 0;
+                    AnimationFrame++;
+                    if (AnimationFrame > 4) AnimationFrame = 1;
+                }
+                walk = true;
+            }
         }
 
         public override void Collision(Box box)

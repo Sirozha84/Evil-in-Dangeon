@@ -10,6 +10,7 @@ namespace Evil_in_Dangeon
     class Coin : Box
     {
         public static Texture2D Texture;
+        public static SoundEffect Sound;
         public int Nominal;
         bool Static;
         int timer;
@@ -45,19 +46,7 @@ namespace Evil_in_Dangeon
 
         public void Take()
         {
-            /*if (Nominal == 0)
-            {
-                hero.Money += 1;
-                World.NewObject(new Bonus((int)Position.X, (int)Position.Y));
-            }
-            if (Nominal == 1)
-            {
-                hero.Money += 3;
-            }
-            if (Nominal == 2)
-            {
-                hero.Money += 10;
-            }*/
+            Sound.Play();
             World.NewObject(new Flash((int)Position.X, (int)Position.Y));
             Destroy();
         }

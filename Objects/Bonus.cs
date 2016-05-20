@@ -11,30 +11,33 @@ namespace Evil_in_Dangeon
     {
         public static Texture2D Texture;
         int delta = 0;
+        int timer = 0;
 
-        public Bonus(int x, int y, int type) : base(x , y, 80, 20)
+        public Bonus(int x, int y, int type) : base(x , y, 80, 28)
         {
             AnimationSet = type;
         }
 
-        public override void Collision(Box box)
-        {
-        }
+        public override void Collision(Box box) { }
 
         public override void Draw()
         {
-            Draw(Texture);
+            if (delta < 50) Draw(Texture);
+            else
+            {
+                timer++;
+                if (timer < 2) Draw(Texture);
+                if (timer > 4) timer = 0;
+            }
         }
 
-        public override void Trigger()
-        {
-        }
+        public override void Trigger() { }
 
         public override void Update()
         {
             delta++;
-            if (delta < 50) Position.Y -= 2;
-            if (delta > 100) Destroy();
+            if (delta < 40) Position.Y -= 3;
+            if (delta > 80) Destroy();
         }
     }
 }
