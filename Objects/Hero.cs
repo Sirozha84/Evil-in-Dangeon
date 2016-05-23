@@ -133,7 +133,7 @@ namespace Evil_in_Dangeon
             if (box is Monster)
             {
                 Monster monster = box as Monster;
-                GetDamage(monster.Damage);
+                if (!monster.Dead) GetDamage(monster.Damage);
             }
         }
 

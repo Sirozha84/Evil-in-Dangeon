@@ -33,7 +33,7 @@ namespace Evil_in_Dangeon
         protected override void DrawMonster()
         {
             int weblen = (int)Position.Y - top;
-            Draw(Web, new Rectangle(38, -weblen, 4, weblen), new Rectangle(0, 0, 4, 4));
+            if (!Dead) Draw(Web, new Rectangle(38, -weblen, 4, weblen), new Rectangle(0, 0, 4, 4));
             Draw(Texture, timerRed == 0 ? Color.White : Color.Red);
         }
 

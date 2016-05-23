@@ -16,6 +16,8 @@ namespace Evil_in_Dangeon
         public int Damage;
         public int timerRed = 0;
         int timerlifebar;
+        public bool Dead;
+        int deadxincrement;
 
         public Monster(int x, int y, int width, int height, int side, int top, int health, int damage) :
             base(x, y, width, height, side, top, true)
@@ -39,7 +41,15 @@ namespace Evil_in_Dangeon
                     //Тут, возможно стоит сделать брызги крови и тп...
 
                     //Смерть
-                    if (Health <= 0) Destroy();
+                    if (Health <= 0)
+                    {
+                        UpsideDown = true;
+                        Dead = true;
+                        timerRed = 0;
+                        CollisionTests = false;
+                        Impuls(new Vector2(0, -10));
+                        deadxincrement = bul.Side * 5;
+                    }
                 }
             }
         }
@@ -47,7 +57,7 @@ namespace Evil_in_Dangeon
         public override void Draw()
         {
             DrawMonster();
-            if (timerlifebar > 0)
+            if (timerlifebar > 0 & !Dead)
             {
                 Draw(LifeBar, new Rectangle(Width / 2 - 40, -12, 80, 8), new Rectangle(0, 8, 4, 8));
                 Draw(LifeBar, new Rectangle(Width / 2 - 40, -12, 80 * Health / HealthMax, 8), new Rectangle(0, 0, 4, 8));
@@ -61,8 +71,17 @@ namespace Evil_in_Dangeon
 
         public override void Update()
         {
-            if (timerRed > 0) timerRed--;
-            UpdateMonster();
+
+            if (!Dead)
+            {
+                if (timerRed > 0) timerRed--;
+                UpdateMonster();
+            }
+            else
+            {
+                Position.X += deadxincrement;
+                Physics(true);
+            }
         }
 
         protected abstract void DrawMonster();

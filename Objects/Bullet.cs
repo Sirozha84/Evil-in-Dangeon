@@ -14,13 +14,15 @@ namespace Evil_in_Dangeon
         public static SoundEffect SountRikoshet;
         public bool Enemy;
         public int Damage;
+        public int Side;
 
-        public Bullet(int x, int y, int side, int Damage, bool Enemy) : base(x, y, 8, 4)
+        public Bullet(int x, int y, int Side, int Damage, bool Enemy) : base(x, y, 8, 4)
         {
-            AnimationSide = side;
+            AnimationSide = Side;
             Sound.Play();
             this.Damage = Damage;
             this.Enemy = Enemy;
+            this.Side = Side;
         }
 
         public override void Collision(Box box)
