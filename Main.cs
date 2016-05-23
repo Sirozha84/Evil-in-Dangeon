@@ -33,6 +33,7 @@ namespace Evil_in_Dangeon
             //Настройка экрана
             //Screen.Set(graphics, 1200, 800, 80, 0);
             Screen.Set(graphics, 1600, 900, 80, 0);
+            Screen.SpeedHoming = 0.05f;
             //Screen.Set(graphics, 1920, 1080, 80, 0);
             //graphics.IsFullScreen = true;
         }
@@ -61,7 +62,7 @@ namespace Evil_in_Dangeon
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Screen.spriteBatch = spriteBatch; //Передаём ссылку на устройство рисования классу экрана
             Box.spriteBatch = spriteBatch; //и классу блока (для рисования)
-
+            
             //Загрузка спрайтов
             Font = Content.Load<SpriteFont>("Font");
             Hero.Texture = Content.Load<Texture2D>("Hero");
@@ -76,6 +77,7 @@ namespace Evil_in_Dangeon
             SpiderOnWeb.Texture = Content.Load<Texture2D>("SpiderOnWeb");
             SpiderOnWeb.Web = Content.Load<Texture2D>("Pixel"); ;
             Monster.LifeBar = Content.Load<Texture2D>("LifeBar");
+            Spider.Texture = Content.Load<Texture2D>("Spider"); ;
             //Загрузка уровня
             world = new MyWorld("\\Map.map", this);
             screen = new Screen(World.Players[0]);

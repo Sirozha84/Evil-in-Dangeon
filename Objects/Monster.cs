@@ -18,9 +18,10 @@ namespace Evil_in_Dangeon
         int timerlifebar;
         public bool Dead;
         int deadxincrement;
+        bool Sleep = true;
 
         public Monster(int x, int y, int width, int height, int side, int top, int health, int damage) :
-            base(x, y, width, height, side, top, true)
+            base(x, y, width, height, side, top, true, true, false, 1, 0, 1000)
         {
             Health = health;
             HealthMax = health;
@@ -47,6 +48,7 @@ namespace Evil_in_Dangeon
                         Dead = true;
                         timerRed = 0;
                         CollisionTests = false;
+                        Hard = false;
                         Impuls(new Vector2(0, -10));
                         deadxincrement = bul.Side * 5;
                     }
@@ -67,6 +69,7 @@ namespace Evil_in_Dangeon
 
         public override void Trigger()
         {
+            Sleep = false;
         }
 
         public override void Update()
@@ -75,7 +78,7 @@ namespace Evil_in_Dangeon
             if (!Dead)
             {
                 if (timerRed > 0) timerRed--;
-                UpdateMonster();
+                if (!Sleep) UpdateMonster();
             }
             else
             {

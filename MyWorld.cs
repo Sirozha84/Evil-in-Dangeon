@@ -32,6 +32,7 @@ namespace Evil_in_Dangeon
                 Objects.Add(new Coin(x + 30, y + 10, 2, true));
             }
             if (code == 60) Objects.Add(new SpiderOnWeb(x, y));
+            if (code == 61) Objects.Add(new Spider(x, y));
         }
     }
 }
