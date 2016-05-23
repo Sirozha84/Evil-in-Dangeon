@@ -12,11 +12,15 @@ namespace Evil_in_Dangeon
         public static Texture2D Texture;
         public static SoundEffect Sound;
         public static SoundEffect SountRikoshet;
+        public bool Enemy;
+        public int Damage;
 
-        public Bullet(int x, int y, int side) : base(x, y, 8, 4)
+        public Bullet(int x, int y, int side, int Damage, bool Enemy) : base(x, y, 8, 4)
         {
             AnimationSide = side;
             Sound.Play();
+            this.Damage = Damage;
+            this.Enemy = Enemy;
         }
 
         public override void Collision(Box box)

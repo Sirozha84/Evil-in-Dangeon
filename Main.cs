@@ -73,6 +73,9 @@ namespace Evil_in_Dangeon
             Bullet.Texture = Content.Load<Texture2D>("Bullet");
             Bullet.Sound = Content.Load<SoundEffect>("BulletShot");
             Bullet.SountRikoshet = Content.Load<SoundEffect>("BulletRikoshet");
+            SpiderOnWeb.Texture = Content.Load<Texture2D>("SpiderOnWeb");
+            SpiderOnWeb.Web = Content.Load<Texture2D>("Pixel"); ;
+            Monster.LifeBar = Content.Load<Texture2D>("LifeBar");
             //Загрузка уровня
             world = new MyWorld("\\Map.map", this);
             screen = new Screen(World.Players[0]);

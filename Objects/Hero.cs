@@ -35,12 +35,8 @@ namespace Evil_in_Dangeon
 
         public override void Draw()
         {
-            if (timerdamage == 0) Draw(Texture);
-            else
-            {
-                Draw(Texture, Color.Red);
-                timerdamage--;
-            }
+            Draw(Texture, timerdamage == 0 ? Color.White : Color.Red);
+            if (timerdamage > 0) timerdamage--;
             int x = 0;
             if (AnimationSide < 0) x = -80;
             int f = 0;
@@ -94,7 +90,7 @@ namespace Evil_in_Dangeon
             {
                 int x = -28;
                 if (AnimationSide > 0) x = 100;
-                World.NewObject(new Bullet((int)Position.X + x, (int)Position.Y + 64, AnimationSide));
+                World.NewObject(new Bullet((int)Position.X + x, (int)Position.Y + 64, AnimationSide, 1, false));
                 shot = true;
                 shotAnim = 2;
             }
@@ -132,6 +128,12 @@ namespace Evil_in_Dangeon
             {
                 DeathZone zone = box as DeathZone;
                 GetDamage(zone.Damage);
+            }
+            //Кусает омнстр
+            if (box is Monster)
+            {
+                Monster monster = box as Monster;
+                GetDamage(monster.Damage);
             }
         }
 
