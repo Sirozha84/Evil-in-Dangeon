@@ -13,6 +13,14 @@ namespace Evil_in_Dangeon
 
         public Skeleton(int x, int y) : base(x, y - 80, 80, 160, 0, 0, 3, 1)
         {
+            MaxSpeed = 2; //5
+            
+            GoOnlyGround = true;
+            JumpTime = 0;  //30
+            JumpSpeed = 0; //15
+            ShotTime = 0;
+            AnimWalkFrames = 4;
+            AnimOtherActions = true;
         }
 
         protected override void DrawMonster()

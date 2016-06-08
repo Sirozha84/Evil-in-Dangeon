@@ -21,7 +21,7 @@ namespace Evil_in_Dangeon
         bool Sleep = true;
 
         public Monster(int x, int y, int width, int height, int side, int top, int health, int damage) :
-            base(x, y, width, height, side, top, true, true, false, 1, 0, 1000)
+            base(x, y, width, height, side, top, true, true, true, 1, 0, 1000)
         {
             Health = health;
             HealthMax = health;
@@ -39,7 +39,7 @@ namespace Evil_in_Dangeon
                     timerRed = 5;
                     bul.Destroy();
                     timerlifebar = 500;
-                    //Тут, возможно стоит сделать брызги крови и тп...
+                    //Тут, возможно стоит сделать брызги крови и тп... покраснение точно надо!
 
                     //Смерть
                     if (Health <= 0)
