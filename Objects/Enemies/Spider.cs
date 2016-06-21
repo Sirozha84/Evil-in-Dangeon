@@ -13,6 +13,7 @@ namespace Evil_in_Dangeon
 
         public Spider(int x, int y) : base(x, y, 80, 80, 0, 28, 1, 1)
         {
+<<<<<<< HEAD:Objects/Enemies/Spider.cs
             //Параметры хотьбы
             MaxSpeed = 5;
             GoOnlyGround = true;
@@ -24,6 +25,15 @@ namespace Evil_in_Dangeon
             ShotTime = 0;
             AnimWalkFrames = 2;
             ShutSprite = false;
+=======
+            MaxSpeed = 5;
+            GoOnlyGround = true;
+            JumpTime = 10;
+            JumpSpeed = 15;
+            ShotTime = 0;
+            AnimWalkFrames = 2;
+            AnimOtherActions = false;
+>>>>>>> origin/master:Objects/Spider.cs
         }
 
         protected override void DrawMonster()
