@@ -32,7 +32,7 @@ namespace Evil_in_Dangeon
             Box.Gravitation = 1;
             //Настройка экрана
             //Screen.Set(graphics, 1200, 800, 80, 0);
-            Screen.Set(graphics, 1600, 900, 80, 0);
+            Screen.Set(graphics, 1560, 800, 80, 0);
             Screen.SpeedHoming = 0.05f;
             //Screen.Set(graphics, 1920, 1080, 80, 0);
             //graphics.IsFullScreen = true;
@@ -71,13 +71,19 @@ namespace Evil_in_Dangeon
             Coin.Sound = Content.Load<SoundEffect>("CoinTake");
             Bonus.Texture = Content.Load<Texture2D>("Bonus");
             Flash.Texture = Content.Load<Texture2D>("Flash");
-            Bullet.Texture = Content.Load<Texture2D>("Bullet");
-            Bullet.Sound = Content.Load<SoundEffect>("BulletShot");
             Bullet.SountRikoshet = Content.Load<SoundEffect>("BulletRikoshet");
+            BulletPistol.Texture = Content.Load<Texture2D>("Bullet");
+            BulletPistol.Sound = Content.Load<SoundEffect>("BulletShot");
+            Bone.Texture = Content.Load <Texture2D>("Bone");
+            Bone.Sound = Content.Load<SoundEffect>("BulletShot");
+            PoisonDrop.Texture = Content.Load<Texture2D>("PoisonDrop");
+            PoisonDrop.Sound = Content.Load<SoundEffect>("BulletShot");
             SpiderOnWeb.Texture = Content.Load<Texture2D>("SpiderOnWeb");
-            SpiderOnWeb.Web = Content.Load<Texture2D>("Pixel"); ;
+            SpiderOnWeb.Web = Content.Load<Texture2D>("Pixel");
             Monster.LifeBar = Content.Load<Texture2D>("LifeBar");
-            Spider.Texture = Content.Load<Texture2D>("Spider"); ;
+            Spider.Texture = Content.Load<Texture2D>("Spider");
+            SpiderPoison.Texture = Content.Load<Texture2D>("Spider");
+            Skeleton.Texture = Content.Load<Texture2D>("Skeleton");
             //Загрузка уровня
             world = new MyWorld("\\Map.map", this);
             screen = new Screen(World.Players[0]);

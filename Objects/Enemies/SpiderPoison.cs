@@ -7,24 +7,23 @@ using SGen;
 
 namespace Evil_in_Dangeon
 {
-    class Skeleton : MonsterWalk
+    class SpiderPoison : MonsterWalk
     {
         public static Texture2D Texture;
 
-        public Skeleton(int x, int y) : base(x, y - 80, 80, 160, 0, 0, 3, 1)
+        public SpiderPoison(int x, int y) : base(x, y, 80, 80, 0, 28, 1, 1)
         {
             //Параметры хотьбы
-            MaxSpeed = 2;
+            MaxSpeed = 5;
             GoOnlyGround = true;
             //Параметры прыжка
-            JumpTime = 0;
-            JumpSpeed = 20;
-            JumpSprite = true;
+            JumpTime = 10;
+            JumpSpeed = 15;
+            JumpSprite = false;
             //Параметры стреляния
-            ShotTime = 0;
-            AnimWalkFrames = 4;
-            ShutSprite = true;
             ShotTime = 100;
+            AnimWalkFrames = 2;
+            ShutSprite = false;
         }
 
         protected override void DrawMonster()
@@ -34,7 +33,7 @@ namespace Evil_in_Dangeon
 
         protected override void Shot()
         {
-            World.NewObject(new Bone((int)Position.X, (int)Position.Y + 66, AnimationSide, 1, true));
+            World.NewObject(new PoisonDrop((int)Position.X, (int)Position.Y + 66, AnimationSide, 1, true));
         }
     }
 }

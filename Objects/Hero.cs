@@ -89,7 +89,6 @@ namespace Evil_in_Dangeon
             if (Keyboard.GetState().IsKeyDown(Keys.Space) & !shot)
             {
                 World.NewObject(new BulletPistol((int)Position.X, (int)Position.Y + 66, AnimationSide, 1, false));
-                World.NewObject(new Bone((int)Position.X, (int)Position.Y + 66, AnimationSide, 1, false));
                 shot = true;
                 shotAnim = 2;
             }
@@ -133,6 +132,16 @@ namespace Evil_in_Dangeon
             {
                 Monster monster = box as Monster;
                 if (!monster.Dead) GetDamage(monster.Damage);
+            }
+            //Пуля
+            if (box is Bullet)
+            {
+                Bullet bul = box as Bullet;
+                if (bul.Enemy)
+                {
+                    GetDamage(bul.Damage);
+                    bul.Destroy();
+                }
             }
         }
 

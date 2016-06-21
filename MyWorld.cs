@@ -33,6 +33,8 @@ namespace Evil_in_Dangeon
             }
             if (code == 60) Objects.Add(new SpiderOnWeb(x, y));
             if (code == 61) Objects.Add(new Spider(x, y));
+            if (code == 62) Objects.Add(new Skeleton(x, y));
+            if (code == 63) Objects.Add(new SpiderPoison(x, y));
         }
     }
 }

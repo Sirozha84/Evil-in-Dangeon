@@ -16,12 +16,12 @@ namespace Evil_in_Dangeon
         protected bool JumpSprite;
         protected bool GoOnlyGround;
         protected int ShotTime;
-        protected Type ShotBullet;
         protected int AnimWalkFrames;
         protected bool ShutSprite;
         int timeranim;
         int timerside;
         int timerjump;
+        int timershot;
         bool jump = false;
 
         public MonsterWalk(int x, int y, int width, int height, int side, int top, int health, int damage) : 
@@ -48,13 +48,13 @@ namespace Evil_in_Dangeon
             }
             //Хотьба
             bool ground = Physics(true);
-            //if (timerjump <= 0)
-            if (AnimationSide < 0) GoLeft(); else GoRight();
+            if (AnimationSet != 1)
+                if (AnimationSide < 0) GoLeft(); else GoRight();
             //Поворот
             timerside--;
             if (timerside == 0)
             {
-                timerside = 30;
+                timerside = RND.Next(30, 60);
                 AnimationSide = (World.Players[0].Position.X < Position.X) ? -1 : 1;
             }
             //Прыжок
@@ -78,7 +78,25 @@ namespace Evil_in_Dangeon
                     }
                 }
             }
+            //Стрельба
+            if (ShotTime > 0)
+            {
+                timershot--;
+                if (timershot <= 0)
+                {
+                    timershot = RND.Next(ShotTime, ShotTime * 2);
+                    Shot();
+                    if (ShutSprite)
+                    {
+                        timeranim = 10;
+                        AnimationSet = 1;
+                        AnimationFrame = 1;
+                    }
+                }
+            }
             //Поворот, если упёрлись в стену
         }
+
+        protected abstract void Shot();
     }
 }
