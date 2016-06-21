@@ -88,9 +88,8 @@ namespace Evil_in_Dangeon
             //Стреляние
             if (Keyboard.GetState().IsKeyDown(Keys.Space) & !shot)
             {
-                int x = -28;
-                if (AnimationSide > 0) x = 100;
-                World.NewObject(new Bullet((int)Position.X + x, (int)Position.Y + 64, AnimationSide, 1, false));
+                World.NewObject(new BulletPistol((int)Position.X, (int)Position.Y + 66, AnimationSide, 1, false));
+                World.NewObject(new Bone((int)Position.X, (int)Position.Y + 66, AnimationSide, 1, false));
                 shot = true;
                 shotAnim = 2;
             }
