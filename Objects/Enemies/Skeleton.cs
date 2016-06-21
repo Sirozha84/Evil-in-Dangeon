@@ -29,7 +29,7 @@ namespace Evil_in_Dangeon
 
         protected override void DrawMonster()
         {
-            Draw(Texture);
+            Draw(Texture, MonsterColor);
         }
 
         protected override void Shot()

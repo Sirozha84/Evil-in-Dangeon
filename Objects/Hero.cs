@@ -127,7 +127,7 @@ namespace Evil_in_Dangeon
                 DeathZone zone = box as DeathZone;
                 GetDamage(zone.Damage);
             }
-            //Кусает омнстр
+            //Кусает монстр
             if (box is Monster)
             {
                 Monster monster = box as Monster;
@@ -140,6 +140,7 @@ namespace Evil_in_Dangeon
                 if (bul.Enemy)
                 {
                     GetDamage(bul.Damage);
+                    Effects.BulletHit(bul, true);
                     bul.Destroy();
                 }
             }

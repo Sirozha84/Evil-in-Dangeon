@@ -24,11 +24,13 @@ namespace Evil_in_Dangeon
             ShotTime = 100;
             AnimWalkFrames = 2;
             ShutSprite = false;
+            //Есть ли у объекта кровь
+            Blood = true;
         }
 
         protected override void DrawMonster()
         {
-            Draw(Texture);
+            Draw(Texture, MonsterColor);
         }
 
         protected override void Shot()

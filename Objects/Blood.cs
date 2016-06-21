@@ -1,18 +1,18 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using SGen;
 
 namespace Evil_in_Dangeon
 {
-    class Flash : Box
+    class Blood : Box
     {
         public static Texture2D Texture;
-        int timer = 0;
 
-        public Flash(int x, int y) : base(x, y, 20, 20) { }
+        public Blood(int x, int y) : base(x - 2, y - 2, 4, 4, 0, 0, false, false, true, 0.1f, 0, 0)
+        {
+            Impuls(RND.Next(360), RND.Next(10));
+        }
 
         public override void Collision(Box box) { }
 
@@ -25,13 +25,7 @@ namespace Evil_in_Dangeon
 
         public override void Update()
         {
-            timer++;
-            if (timer > 4)
-            {
-                timer = 0;
-                AnimationFrame++;
-                if (AnimationFrame > 3) Destroy();
-            }
+            Physics(true);
         }
     }
 }

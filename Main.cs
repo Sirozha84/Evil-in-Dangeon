@@ -84,6 +84,7 @@ namespace Evil_in_Dangeon
             Spider.Texture = Content.Load<Texture2D>("Spider");
             SpiderPoison.Texture = Content.Load<Texture2D>("Spider");
             Skeleton.Texture = Content.Load<Texture2D>("Skeleton");
+            Blood.Texture = Content.Load<Texture2D>("Blood");
             //Загрузка уровня
             world = new MyWorld("\\Map.map", this);
             screen = new Screen(World.Players[0]);

@@ -28,13 +28,15 @@ namespace Evil_in_Dangeon
             top = (int)Position.Y - weblen;
             //Начальное направление движения
             napY = RND.Next(2) == 0 ? 1 : -1;
+            //Есть ли у объекта кровь
+            Blood = true;
         }
 
         protected override void DrawMonster()
         {
             int weblen = (int)Position.Y - top;
             if (!Dead) Draw(Web, new Rectangle(38, -weblen, 4, weblen), new Rectangle(0, 0, 4, 4));
-            Draw(Texture, timerRed == 0 ? Color.White : Color.Red);
+            Draw(Texture, MonsterColor);
         }
 
         protected override void UpdateMonster()

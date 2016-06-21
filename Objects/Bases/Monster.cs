@@ -1,8 +1,5 @@
-﻿using System;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using SGen;
 
 namespace Evil_in_Dangeon 
@@ -14,11 +11,13 @@ namespace Evil_in_Dangeon
         int Health;
         int HealthMax;
         public int Damage;
-        public int timerRed = 0;
+        protected int timerRed = 0;
         int timerlifebar;
         public bool Dead;
         int deadxincrement;
         bool Sleep = true;
+        protected Color MonsterColor;
+        protected bool Blood;
 
         public Monster(int x, int y, int width, int height, int side, int top, int health, int damage) :
             base(x, y, width, height, side, top, true, true, true, 1, 0, 1000)
@@ -37,10 +36,9 @@ namespace Evil_in_Dangeon
                 {
                     Health -= bul.Damage;
                     timerRed = 5;
+                    Effects.BulletHit(bul, Blood);
                     bul.Destroy();
                     timerlifebar = 500;
-                    //Тут, возможно стоит сделать брызги крови и тп... покраснение точно надо!
-
                     //Смерть
                     if (Health <= 0)
                     {
@@ -74,7 +72,6 @@ namespace Evil_in_Dangeon
 
         public override void Update()
         {
-
             if (!Dead)
             {
                 if (timerRed > 0) timerRed--;
@@ -85,6 +82,7 @@ namespace Evil_in_Dangeon
                 Position.X += deadxincrement;
                 Physics(true);
             }
+            MonsterColor = timerRed == 0 ? Color.White : Color.Red;
         }
 
         protected abstract void DrawMonster();
