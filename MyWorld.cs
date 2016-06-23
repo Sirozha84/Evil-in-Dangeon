@@ -10,6 +10,9 @@ namespace Evil_in_Dangeon
         {
             if (code == 3) { Box o = new Hero(x, y); Objects.Add(o); Players.Add(o); }
             if (code == 5) Objects.Add(new DeathZone(x, y, 5));
+            if (code == 10) Objects.Add(new Table(x, y, 0));
+            if (code == 11) Objects.Add(new Table(x, y, 1));
+            if (code == 12) Objects.Add(new Table(x, y, 2));
             if (code == 20) Objects.Add(new Coin(x + 30, y + 30, 0, true));
             if (code == 21)
             {

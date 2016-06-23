@@ -18,12 +18,6 @@ namespace Evil_in_Dangeon
         //Элементы SGen
         Screen screen;
         MyWorld world;
-        //Шрифт
-        SpriteFont Font;
-        //Счетчик ФПС
-        int second;
-        int fps = 0;
-        int fpsavg = 0;
 
         public Main()
         {
@@ -61,10 +55,12 @@ namespace Evil_in_Dangeon
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Screen.spriteBatch = spriteBatch; //Передаём ссылку на устройство рисования классу экрана
+            Effects.spriteBatch = spriteBatch;
             Box.spriteBatch = spriteBatch; //и классу блока (для рисования)
             
             //Загрузка спрайтов
-            Font = Content.Load<SpriteFont>("Font");
+            Effects.DebugFont = Content.Load<SpriteFont>("Font");
+            Effects.PopUpTable = Content.Load<Texture2D>("PopUp");
             Hero.Texture = Content.Load<Texture2D>("Hero");
             Hero.TextureGuns = Content.Load<Texture2D>("Guns");
             Coin.Texture = Content.Load<Texture2D>("Coin");
@@ -85,6 +81,8 @@ namespace Evil_in_Dangeon
             SpiderPoison.Texture = Content.Load<Texture2D>("Spider");
             Skeleton.Texture = Content.Load<Texture2D>("Skeleton");
             Blood.Texture = Content.Load<Texture2D>("Blood");
+            Table.Texture = Content.Load<Texture2D>("Table");
+            Table.Font = Content.Load<SpriteFont>("Font");
             //Загрузка уровня
             world = new MyWorld("\\Map.map", this);
             screen = new Screen(World.Players[0]);
@@ -126,25 +124,8 @@ namespace Evil_in_Dangeon
         {
             //Рисование сцены
             screen.Draw(GraphicsDevice);
-
-            //Рисование отладочнай информации
-            fps++;
-            base.Draw(gameTime);
-            if (second != DateTime.Now.Second)
-            {
-                second = DateTime.Now.Second;
-                fpsavg = fps;
-                fps = 0;
-            }
-            spriteBatch.Begin();
-            spriteBatch.DrawString(Font, "FPS: " + fpsavg, new Vector2(10,10), Color.White);
-            spriteBatch.DrawString(Font, "Объектов: " + World.Objects.Count, new Vector2(10, 30), Color.White);
-            Hero hero = World.Players[0] as Hero;
-            spriteBatch.DrawString(Font, "Позиция: " + hero.Position.X + " x " + hero.Position.Y, new Vector2(10, 50), Color.White);
-
-            spriteBatch.DrawString(Font, "Здоровье: " + hero.Health + " / " + hero.HealthMax, new Vector2(300, 10), Color.White);
-            spriteBatch.DrawString(Font, "Деньги: " + hero.Money, new Vector2(300, 30), Color.White);
-            spriteBatch.End();
+            //Рисование игрового статуса
+            Effects.DrawGameStatus(World.Players[0] as Hero);
         }
     }
 }

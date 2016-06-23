@@ -11,8 +11,7 @@ namespace Evil_in_Dangeon
         public PoisonDrop(int x, int y, int Side, int Damage, bool Enemy) :
             base(x, y, 24, 12, Side, true, Damage, Enemy)
         {
-            Sound.Play();
-            //animationFrames = 2;
+            PlayIfVisible(Sound, false);
             Speed = 10;
             Jump(RND.Next(10, 20));
         }

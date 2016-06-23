@@ -47,6 +47,7 @@ namespace Evil_in_Dangeon
             }
             else shotAnim = 0;
             Draw(TextureGuns, x, 0, new Rectangle(f * 160, Gun * 160, 160, 160));
+            
         }
 
         public override void Trigger() { }

@@ -11,7 +11,7 @@ namespace Evil_in_Dangeon
         public BulletPistol(int x, int y, int Side, int Damage, bool Enemy) :
             base(x, y, 8, 4, Side, false, Damage, Enemy)
         {
-            Sound.Play();
+            PlayIfVisible(Sound, false);
             Speed = 20;
             Accuracy = RND.Next(-50, 50) / 100f;
         }

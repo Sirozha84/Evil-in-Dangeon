@@ -11,7 +11,7 @@ namespace Evil_in_Dangeon
         public Bone(int x, int y, int Side, int Damage, bool Enemy) :
             base(x, y, 28, 28, Side, true, Damage, Enemy)
         {
-            Sound.Play();
+            PlayIfVisible(Sound, false);
             animationFrames = 2;
             Speed = 10;
             Jump(RND.Next(10, 20));
