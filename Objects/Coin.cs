@@ -15,7 +15,8 @@ namespace Evil_in_Dangeon
         bool Static;
         int timer;
 
-        public Coin(int X, int Y, int Nominal, bool Static) : base(X, Y, 20, 20)
+        public Coin(int X, int Y, int Nominal, bool Static) :
+            base(X, Y, 20, 20, 0, 0, false, true, true, 0.5f, 0.5f, 0)
         {
             this.Static = Static;
             this.Nominal = Nominal;

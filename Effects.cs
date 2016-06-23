@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using SGen;
@@ -92,6 +93,10 @@ namespace Evil_in_Dangeon
             spriteBatch.End();
         }
 
+        /// <summary>
+        /// Инициализация таблички с надписью
+        /// </summary>
+        /// <param name="MessageNum"></param>
         public static void HelpPopUp(int MessageNum)
         {
             if (popupmode == 0)
@@ -102,6 +107,15 @@ namespace Evil_in_Dangeon
                         "самая обыкновенная табличка.",
                         "И ничего интеренсого на ней не написано!" };
                 }
+                if (MessageNum == 1)
+                {
+                    PopUp = new string[] { "Короче не дурак,",
+                        "сам рабзерёшься что да как" };
+                }
+                if (MessageNum == 2)
+                {
+                    PopUp = new string[] { "Бла бла бла..." };
+                }
                 timerpopup = 0;
                 popupmode = 1;
                 str = 0;
@@ -111,6 +125,24 @@ namespace Evil_in_Dangeon
             {
                 timerpopup = 0;
             }
+        }
+
+        /// <summary>
+        /// Выброс добычи из монстра
+        /// </summary>
+        /// <param name="level"></param>
+        public static void Loot(int x, int y, int level)
+        {
+            List<Box> newobjects = new List<Box>();
+            if (level >= 1 & level <= 3)
+                for (int i = 0; i < level; i++)
+                    newobjects.Add(new Coin(x - 10, y - 10, 0, false));
+
+            newobjects.ForEach(o =>
+            {
+                o.Impuls(new Vector2(Box.RND.Next(-20, 20), Box.RND.Next(-10, 0)));
+                World.NewObject(o);
+            });
         }
     }
 }

@@ -29,28 +29,46 @@ namespace Evil_in_Dangeon
 
         public override void Collision(Box box)
         {
+            //Попдаает пуля
             if (box is Bullet)
             {
                 Bullet bul = box as Bullet;
                 if (!bul.Enemy)
                 {
-                    Health -= bul.Damage;
-                    timerRed = 5;
+                    GetDamage(bul.Damage, bul.Side);
                     Effects.BulletHit(bul, Blood);
                     bul.Destroy();
-                    timerlifebar = 500;
-                    //Смерть
-                    if (Health <= 0)
-                    {
-                        UpsideDown = true;
-                        Dead = true;
-                        timerRed = 0;
-                        CollisionTests = false;
-                        Hard = false;
-                        Impuls(new Vector2(0, -10));
-                        deadxincrement = bul.Side * 5;
-                    }
                 }
+            }
+            //Попадаем в смертельную зону
+            if (box is DeathZone)
+            {
+                DeathZone zone = box as DeathZone;
+                GetDamage(zone.Damage, AnimationSide);
+            }
+        }
+
+        /// <summary>
+        /// Получение повреждений
+        /// </summary>
+        /// <param name="Damage"></param>
+        void GetDamage(int Damage, int side)
+        {
+            Health -= Damage;
+            timerRed = 5;
+            timerlifebar = 500;
+            //Смерть
+            if (Health <= 0)
+            {
+                UpsideDown = true;
+                Dead = true;
+                timerRed = 0;
+                CollisionTests = false;
+                Hard = false;
+                Impuls(new Vector2(0, -10));
+                deadxincrement = side * 5;
+                //Откидываем подарки
+                Effects.Loot((int)Position.X + Width / 2, (int)Position.Y + Health / 2, HealthMax);
             }
         }
 
