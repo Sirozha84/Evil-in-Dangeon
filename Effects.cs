@@ -63,12 +63,11 @@ namespace Evil_in_Dangeon
             spriteBatch.DrawString(DebugFont, "Здоровье: " + hero.Health + " / " + hero.HealthMax, new Vector2(300, 10), Color.White);
             spriteBatch.DrawString(DebugFont, "Деньги: " + hero.Money, new Vector2(300, 30), Color.White);
 
-
             //Поп-Ап
             if (popupmode > 0)
             {
                 timerpopup++;
-                if (popupmode == 1 && timerpopup > 2)
+                if (popupmode == 1 && timerpopup > 1)
                 {
                     timerpopup = 0;
                     chr++;
@@ -128,6 +127,17 @@ namespace Evil_in_Dangeon
         }
 
         /// <summary>
+        /// Стреляние
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="Side"></param>
+        public static void Shot(int x, int y, int Side, int Damage, bool Enemy)
+        {
+            //Пока оставлю здесь... не придумал как сделать лучше
+        }
+
+        /// <summary>
         /// Выброс добычи из монстра
         /// </summary>
         /// <param name="level"></param>
@@ -136,13 +146,25 @@ namespace Evil_in_Dangeon
             List<Box> newobjects = new List<Box>();
             if (level >= 1 & level <= 3)
                 for (int i = 0; i < level; i++)
-                    newobjects.Add(new Coin(x - 10, y - 10, 0, false));
+                    newobjects.Add(new Coin(x, y, 0, false));
 
             newobjects.ForEach(o =>
             {
                 o.Impuls(new Vector2(Box.RND.Next(-20, 20), Box.RND.Next(-10, 0)));
                 World.NewObject(o);
             });
+        }
+
+        /// <summary>
+        /// Взрыв
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="Level"></param>
+        /// <param name="Enemy"></param>
+        public static void Explode(int x, int y, int Level, bool Enemy)
+        {
+            World.NewObject(new Explosion(x, y, Enemy));
         }
     }
 }

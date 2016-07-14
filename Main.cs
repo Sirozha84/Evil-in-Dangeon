@@ -57,30 +57,34 @@ namespace Evil_in_Dangeon
             Screen.spriteBatch = spriteBatch; //Передаём ссылку на устройство рисования классу экрана
             Effects.spriteBatch = spriteBatch;
             Box.spriteBatch = spriteBatch; //и классу блока (для рисования)
-            
+
             //Загрузка спрайтов
-            Effects.DebugFont = Content.Load<SpriteFont>("Font");
-            Effects.PopUpTable = Content.Load<Texture2D>("PopUp");
-            Hero.Texture = Content.Load<Texture2D>("Hero");
-            Hero.TextureGuns = Content.Load<Texture2D>("Guns");
-            Coin.Texture = Content.Load<Texture2D>("Coin");
-            Coin.Sound = Content.Load<SoundEffect>("CoinTake");
+            Barrel.Texture = Content.Load<Texture2D>("Barrel");
+            Blood.Texture = Content.Load<Texture2D>("Blood");
+            Bone.Texture = Content.Load <Texture2D>("Bone");
+            Bone.Sound = Content.Load<SoundEffect>("BulletShot");
             Bonus.Texture = Content.Load<Texture2D>("Bonus");
-            Flash.Texture = Content.Load<Texture2D>("Flash");
             Bullet.SountRikoshet = Content.Load<SoundEffect>("BulletRikoshet");
             BulletPistol.Texture = Content.Load<Texture2D>("Bullet");
             BulletPistol.Sound = Content.Load<SoundEffect>("BulletShot");
-            Bone.Texture = Content.Load <Texture2D>("Bone");
-            Bone.Sound = Content.Load<SoundEffect>("BulletShot");
+            Chest.Texture = Content.Load<Texture2D>("Chest");
+            Coin.Texture = Content.Load<Texture2D>("Coin");
+            Coin.Sound = Content.Load<SoundEffect>("CoinTake");
+            Effects.DebugFont = Content.Load<SpriteFont>("Font");
+            Effects.PopUpTable = Content.Load<Texture2D>("PopUp");
+            Explosion.Texture = Content.Load<Texture2D>("Explosion");
+            Explosion.Sound = Content.Load<SoundEffect>("ExplosionSnd");
+            Flash.Texture = Content.Load<Texture2D>("Flash");
+            Hero.Texture = Content.Load<Texture2D>("Hero");
+            Hero.TextureGuns = Content.Load<Texture2D>("Guns");
+            Monster.LifeBar = Content.Load<Texture2D>("LifeBar");
             PoisonDrop.Texture = Content.Load<Texture2D>("PoisonDrop");
             PoisonDrop.Sound = Content.Load<SoundEffect>("BulletShot");
             SpiderOnWeb.Texture = Content.Load<Texture2D>("SpiderOnWeb");
             SpiderOnWeb.Web = Content.Load<Texture2D>("Pixel");
-            Monster.LifeBar = Content.Load<Texture2D>("LifeBar");
             Spider.Texture = Content.Load<Texture2D>("Spider");
             SpiderPoison.Texture = Content.Load<Texture2D>("Spider");
             Skeleton.Texture = Content.Load<Texture2D>("Skeleton");
-            Blood.Texture = Content.Load<Texture2D>("Blood");
             Table.Texture = Content.Load<Texture2D>("Table");
             Table.Font = Content.Load<SpriteFont>("Font");
             //Загрузка уровня
@@ -127,5 +131,6 @@ namespace Evil_in_Dangeon
             //Рисование игрового статуса
             Effects.DrawGameStatus(World.Players[0] as Hero);
         }
+       
     }
 }

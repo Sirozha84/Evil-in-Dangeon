@@ -23,7 +23,7 @@ namespace Evil_in_Dangeon
         public Bullet(int x, int y, int Width, int Height, int Side, bool Gravity, int Damage, bool Enemy) :
             base(x - Width / 2, y - Height / 2, Width, Height, 0, 0, false, Gravity, true, 10, 0, 0)
         {
-            if (Side > 0) Position.X += 80;
+            //if (Side > 0) Position.X += 80;
             AnimationSide = Side;
             this.Damage = Damage;
             this.Enemy = Enemy;
