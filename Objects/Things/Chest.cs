@@ -6,7 +6,7 @@ namespace Evil_in_Dangeon
     {
         public static Texture2D Texture;
 
-        public Chest(int x, int y) : base(x - 20, y - 40, 120, 120, 3)
+        public Chest(int x, int y) : base(x - 20, y - 40, 120, 120, 20)
         {
         }
 

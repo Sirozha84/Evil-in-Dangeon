@@ -6,7 +6,7 @@ namespace Evil_in_Dangeon
     {
         public static Texture2D Texture;
 
-        public Barrel(int x, int y) : base(x, y - 40, 80, 120, 2)
+        public Barrel(int x, int y) : base(x, y - 40, 80, 120, 5)
         {
         }
 

@@ -21,7 +21,7 @@ namespace Evil_in_Dangeon
                 int x = (int)Position.X + Width / 2;
                 int y = (int)Position.Y + Height / 2;
                 Effects.Loot(x, y, Level);
-                Effects.Explode(x, y, 1, false);
+                Effects.Explode(x, y, Level, false);
             }
         }
 
