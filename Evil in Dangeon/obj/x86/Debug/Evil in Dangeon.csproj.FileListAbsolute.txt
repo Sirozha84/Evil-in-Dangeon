@@ -1,0 +1,164 @@
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Evil in Dangeon.exe
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Evil in Dangeon.pdb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.RawInput.dll
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.RawInput.xml
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\obj\x86\Debug\Evil in Dangeon.csprojResolveAssemblyReference.cache
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\obj\x86\Debug\Evil in Dangeon.exe
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\obj\x86\Debug\Evil in Dangeon.pdb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Hero.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Map.map
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Walls.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Evil in Dangeon.exe.config
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SGen.dll
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SGen.pdb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Sky.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Coin.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Bonus.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Flash.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Guns.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Bullet.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\BulletShot.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\CoinTake.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\BulletRikoshet.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Font.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\SpiderOnWeb.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Pixel.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\LifeBar.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Spider.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Skeleton.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Bone.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\PoisonDrop.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Blood.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Table.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\PopUp.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Barrel.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Chest.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Explosion.xnb
+C:\Users\sg\Dropbox\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\ExplosionSnd.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Evil in Dangeon.exe.config
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\obj\x86\Debug\Evil in Dangeon.exe
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\obj\x86\Debug\Evil in Dangeon.pdb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Map.map
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Barrel.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Blood.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Bone.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Bonus.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Bullet.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\BulletRikoshet.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\BulletShot.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Chest.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Coin.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\CoinTake.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Explosion.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\ExplosionSnd.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Flash.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Font.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Guns.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Hero.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\LifeBar.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Pixel.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\PoisonDrop.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\PopUp.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Skeleton.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Sky.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Spider.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\SpiderOnWeb.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Table.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Walls.xnb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Evil in Dangeon.exe
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Evil in Dangeon.pdb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\MonoGame.Framework.dll
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SGen.dll
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.dll
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.XInput.dll
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.RawInput.dll
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SGen.pdb
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\MonoGame.Framework.xml
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.xml
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.XInput.xml
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.RawInput.xml
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+c:\Users\sg\YandexDisk\Проекты\Evil in Dangeon\Evil in Dangeon\obj\x86\Debug\Evil in Dangeon.csprojResolveAssemblyReference.cache
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Map.map
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Barrel.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Blood.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Bone.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Bonus.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Bullet.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\BulletRikoshet.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\BulletShot.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Chest.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Coin.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\CoinTake.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Explosion.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\ExplosionSnd.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Flash.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Font.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Guns.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Hero.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\LifeBar.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Pixel.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\PoisonDrop.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\PopUp.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Skeleton.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Sky.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Spider.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\SpiderOnWeb.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Table.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Content\Walls.xnb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Evil in Dangeon.exe.config
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Evil in Dangeon.exe
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\Evil in Dangeon.pdb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\MonoGame.Framework.dll
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SGen.dll
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.dll
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.XInput.dll
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SGen.pdb
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\MonoGame.Framework.xml
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.xml
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.XInput.xml
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\obj\x86\Debug\Evil in Dangeon.csprojResolveAssemblyReference.cache
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\obj\x86\Debug\Evil in Dangeon.csproj.CoreCompileInputs.cache
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\obj\x86\Debug\Evil in Dangeon.exe
+c:\Users\sg\Проекты\Evil in Dangeon\Evil in Dangeon\obj\x86\Debug\Evil in Dangeon.pdb
