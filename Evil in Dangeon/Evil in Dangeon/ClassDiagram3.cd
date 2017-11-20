@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Evil_in_Dangeon.Effects" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAFCAAAAAgAAAAgACAQAAAADAACAgABAAAASAAAA=</HashCode>
+      <FileName>Effects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Main" Collapsed="true">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEEAAAAAAAwAAAAAAAAQAAAAAAAgAAAAAAAAAAAQ=</HashCode>
+      <FileName>Main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.MyWorld" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyWorld.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Bullet" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgCAAIAIghAAgAAICIABAAIAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Objects\Bases\Bullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Cache" Collapsed="true">
+    <Position X="1.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIAAABAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Bases\Cache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Monster" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACBCAAYgCAhAAAAAAAAAEAAAAAICQACAgCBAAAAA=</HashCode>
+      <FileName>Objects\Bases\Monster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.MonsterWalk" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAIgAAAgAAAAQAAAAAAAABIAQCAAgAAACAACAA=</HashCode>
+      <FileName>Objects\Bases\MonsterWalk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Blood" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIAAAhAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Objects\Blood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Bonus" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIAAAhAAAAAAAAAAAAAAAAAAAAIAAEAAAAA=</HashCode>
+      <FileName>Objects\Bonus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Bone" Collapsed="true">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIgAAAAAAA=</HashCode>
+      <FileName>Objects\Bullets\Bone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.BulletPistol" Collapsed="true">
+    <Position X="0.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIgAAAAAAA=</HashCode>
+      <FileName>Objects\Bullets\BulletPistol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.PoisonDrop" Collapsed="true">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIgAAAAAAA=</HashCode>
+      <FileName>Objects\Bullets\PoisonDrop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.DeathZone" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAAIAAAhAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\DeathZone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Skeleton" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAIAABAAAAA=</HashCode>
+      <FileName>Objects\Enemies\Skeleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Spider" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAIAABAAAAA=</HashCode>
+      <FileName>Objects\Enemies\Spider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.SpiderOnWeb" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAQAAAAAAAAAgAAAAAAACAQAIAABAAAAA=</HashCode>
+      <FileName>Objects\Enemies\SpiderOnWeb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.SpiderPoison" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAIAABAAAAA=</HashCode>
+      <FileName>Objects\Enemies\SpiderPoison.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Flash" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIAAAhAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Objects\Flash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Hero" Collapsed="true">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQYCAAAAIgAAhAAAAABAAAAAAADAAAACCIgAAEAAAA=</HashCode>
+      <FileName>Objects\Hero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Table" Collapsed="true">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIAAAhAABAAAAAAAAAAAAAAAAAIAAAACAAA=</HashCode>
+      <FileName>Objects\Table.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Barrel" Collapsed="true">
+    <Position X="0.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Objects\Things\Barrel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Chest" Collapsed="true">
+    <Position X="2.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Objects\Things\Chest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Coin" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIAAAhAAAAAAAAQAAAAAAAAEBAMAAAAAAAA=</HashCode>
+      <FileName>Objects\Things\Coin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Evil_in_Dangeon.Program" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
